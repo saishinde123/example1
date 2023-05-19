@@ -25,7 +25,7 @@ app.post("/",function(req,res){
             var reqdata;
             reqdata=JSON.parse(data);
             var b;
-            res.send("City name is "+reqdata.location.name );
+            res.send("City name is "+reqdata.location.name+"temperature is"+reqdata.current.temp_c );
         });
     });
 });
